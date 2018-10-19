@@ -7,7 +7,9 @@ __webpack_public_path__ =
     "//stnew03.beisen.com/ux/upaas/" +
     process.env.packageName +
     "/release/dist/";
-const component = require(process.env.componentEntry).default;//ES6 module 路径不支持这种格式
+import propsLoader from './propsLoader';
+import component from '&/index.js'
+component = propsLoader(component);
 /**
  * 组件注册
  */
