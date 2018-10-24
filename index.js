@@ -8,8 +8,8 @@ __webpack_public_path__ =
     process.env.packageName +
     "/release/dist/";
 import propsLoader from './propsLoader';
-import component from '&/index.js'
-component = propsLoader(component);
+import rawComponent from '&/index.js'
+const component = propsLoader(rawComponent);
 /**
  * 组件注册
  */
