@@ -1,8 +1,17 @@
 {
-  "name": "@talentui/thunder-component-bootstrap",
-  "version": "1.0.3",
-  "main": "index.js",
-  "repository": "https://github.com/talentui/external-components-entrance.git",
-  "author": "lihe3 <lihe3@corp.beisencorp.com>",
-  "license": "MIT"
+    "name": "@talentui/thunder-component-bootstrap",
+    "version": "1.0.3",
+    "main": "lib/index.js",
+    "repository": "https://github.com/talentui/external-components-entrance.git",
+    "author": "lihe3 <lihe3@corp.beisencorp.com>",
+    "license": "MIT",
+    "scripts": {
+        "prepublish": "rm -rf lib/ && babel ./src --out-dir lib --copy-files"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.1.5",
+        "@babel/core": "^7.1.6",
+        "@talentui/get-babel-config": "^4.0.3",
+        "core-js": "^2.5.7"
+    }
 }
