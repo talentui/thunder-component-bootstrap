@@ -1,6 +1,6 @@
 {
     "name": "@talentui/thunder-component-bootstrap",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "main": "lib/index.js",
     "repository": "https://github.com/talentui/external-components-entrance.git",
     "author": "lihe3 <lihe3@corp.beisencorp.com>",
