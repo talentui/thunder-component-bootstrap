@@ -14,7 +14,7 @@ const component = propsLoader(rawComponent);
  * 组件注册
  */
 const componentCode = process.env.componentCode;//组件编码
-const appId = process.env.appId;//组件的应用ID
+const appId = process.env.appId || 100;//组件的应用ID,package.json内没有的话，默认是100 就是通用组件
 window._talentui_registry.update("_externalComp", function(externalComp) {
     if (externalComp === undefined) {
         const newValue = {};
