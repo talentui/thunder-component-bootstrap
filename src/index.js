@@ -22,10 +22,10 @@ window._talentui_registry.update("_externalComp", function(externalComp) {
         newValue[appId][componentCode] = component;
         return newValue;
     } else {
-        const curValue = externalComp[process.env.appId] || {};
+        const curValue = externalComp[appId] || {};
         const newObj = {};
         newObj[componentCode] = component;
-        externalComp[process.env.appId] = Object.assign({}, curValue, newObj);
+        externalComp[appId] = Object.assign({}, curValue, newObj);
         return externalComp;
     }
 });
